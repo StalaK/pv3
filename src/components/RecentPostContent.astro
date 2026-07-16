@@ -1,0 +1,20 @@
+---
+import { getCollection, render, getEntry } from 'astro:content';
+import PostLayout from '../layouts/PostLayout.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const recent = posts.shift();
+const { Content } = await render(recent!);
+
+---
+
+<PostLayout
+    title={recent?.data.title}
+    pubDate={recent?.data.pubDate}
+    updatedDate={recent?.data.updatedDate}
+>
+    <Content />
+</PostLayout>
