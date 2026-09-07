@@ -2,6 +2,7 @@
 title: 'You Will Never Own Your Video Games'
 description: 'or your software, or your movies or your music'
 pubDate: '2026-09-07'
+tags: ["software", "gaming", "licensing"]
 ---
 
 _Disclaimer: Before we get into it, I want to point out that I am in no way an expert on law, licensing etc. I'm just a dev talking about what I've learned from reading into software licenses for my own projects. Please get in touch if anyone has any corrections._
