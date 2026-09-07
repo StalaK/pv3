@@ -13,6 +13,7 @@ const { Content } = await render(recent!);
 
 <PostLayout
     title={recent?.data.title}
+    subtitle={recent?.data.description}
     pubDate={recent?.data.pubDate}
     updatedDate={recent?.data.updatedDate}
 >
