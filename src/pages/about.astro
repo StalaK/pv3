@@ -1,5 +1,7 @@
 ---
 import Layout from "../layouts/StaticPage.astro";
+import bskylogo from "../assets/bskylogo.png"
+import { Image } from "astro:assets";
 ---
 
 <Layout title="About Me">
@@ -33,6 +35,9 @@ import Layout from "../layouts/StaticPage.astro";
   </div>
 
   <div>
-    <a href="https://bsky.app/profile/wowjosh.bsky.social" target="_blank"> Josh Hughes on BlueSky </a>
+    <a href="https://bsky.app/profile/wowjosh.bsky.social" target="_blank">
+      <Image src={bskylogo} alt="BlueSky logo" width="32" height="32" />
+       Josh Hughes on BlueSky
+    </a>
   </div>
 </Layout>
