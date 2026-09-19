@@ -2,6 +2,7 @@
 title: 'Creating a Browser Extension Caused Me Psychic Damage'
 description: 'Google score a super effective hit'
 pubDate: '2026-09-14'
+updatedDate: '2026-09-19'
 tags: ["software", "browser", "browser extension", "google", "mozilla", "chrome", "firefox", "speedr"]
 ---
 
@@ -58,4 +59,24 @@ I've not done a release since then because I'm currently happy with the current 
 
 I don't want to point fingers because I can't be too certain it's all from Google (unless the email specifically state Google/Chrome), but the Firefox extension was live a couple of weeks before the Chrome one and I didn't get a single email until the Chrome extension went live. I'm not claiming Firefox is more secure, it's almost definitely related to the size of the userbases, but I'm not planning on doing any further investigations into it. My inbox can only take so much of a beating.
 
-To all browser extension developers out there, past, present and future, I wish you luck. You're gonna need it.
+To all browser extension developers out there, past, present and future, I wish you luck. You're gonna need it!
+
+_**Update (2026-09-19):**_ After publishing I was asked "what do you wish you knew before starting this project?" which is a great question whivh got me thinking.
+
+In hindsight this project had three goals:
+
+1. Explore agentic development and vibe coding to see what could be produced
+2. Learn what's involved with developing and releasing a browser extension
+3. Have a useful speed reading extension that I can be sure isn't harvesting credentials or personal data at the end of the project
+
+With two of the three goals being aimed around learning, I suppose there's not really anything I wish I knew _about_ making an extension before I started. What I do wish I knew is that the review process is not as in depth as a mobile app review in terms of code inspection and documentation.
+
+I assumed that since browser extensions have been around longer than smart phones that the process would be more mature and well documented. On the Mozilla side the process seemed dated. It feels like they hit a point many years ago, decided that it's good enough, don't fix what isn't broken, which makes sense. Until recently, browser extensions weren't a major battle ground for winning users over from Chrome. Even now, the main extension which is doing that heavy lifting is Adblock Plus which has been around long enough at this point to have the process down.
+
+On the Google side I expected a process similar to releasing to the Play Store, which in some ways it is, but in others it's not. The rejection for violating their anti spam policy which actually meant a name collision with an "existing" extension which doesn't show up when searching for it on their store is what really drove me over the edge to write this. Nowhere in their anti spam policy does it mention extension naming. There are other parts like I previously mentioned like having to host an external privacy policy for an extension which doesn't touch any personal data was kind of frustrating.
+
+Then for both sides I was surprised to find the security checks very lacking. Malicious browser extensions are a well known thing (Honey being a recent high profile one), but it seems like a reactive approach is taken by both sides. When uploading the extension, both sides did an automated code scan. The first time  round it did find some issues which were easily resolved, but I doubt it would be difficult to work around them. Mozilla did say that a manual code review might be performed at a later date, but again, that seems like it would be reactive based on user feedback.
+
+When I think about it though, it makes sense that this process isn't as refined as releasing a mobile app. Extensions don't bring in money compared to mobile apps. At best, they'll attract a couple of users from a competitor, at worst they'll introduce security vulnerabilities which may be blamed on the browser itself. There just isn't the money or incentives there to invest in more robust scans, informative documentation or support to make it worthwhile.
+
+As an aside, it'd be interesting to know if having extensions is a net positive for a browser. Back in the early 2000s, Firefox having an extensions was a major selling point for users to migrate over from Internet Explorer. When Chrome released, it followed suit with extensions,plus a selling point of being that you could install them without having to restart the browser. Nowadays I'm not really sure if extension are they selling point they used to be. I've seen some enterprise security software have extensions which are installed and managed by sysadmins. I wonder if that's one of the main reasons that browsers (mainly Chrome) still support them.
