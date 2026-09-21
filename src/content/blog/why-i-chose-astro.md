@@ -22,3 +22,7 @@ So why Astro instead of every other option?
 5. It seemed fun!
 
 Points 2 and 5 are the major ones here as they reduce the friction of starting to write, meaning that it's easier to just get writing instead of dealing with the technical side of things before even starting.
+
+Of course, every choice has drawbacks so here's some of the downsides. The first is that I can't release a new post or update without some downtime, but as previously mentioned, this isn't a critical service and a deployment is fast. The second downside is that I'm in the Node ecosystem, and NPM is a big attack vector so I'll need to watch my dependencies.
+
+There was a third downside but I've got a solution for that. With using something like Wordpress, I've got the flexibility of being able to log in on any browser and write a post. With using Astro, it'd mean making sure I've got Git installed, cloning the repo, downloading an editor or choosing to write a new blog post in Notepad. That's not actually the case though! I can access my repo directly in Github, add a new file and preview the markdown, so that turns this negative back into a positive!
