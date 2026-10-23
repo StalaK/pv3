@@ -9,7 +9,7 @@ Refactoring some code recently. I was in the middle of moving a large branching 
 
 The purpose of a constructor is to create an instance of an object, and they can be utilised to define rules around how that object can be created. This can be a powerful tool to ensure that classes can't be created in an invalid state. Instead, I'm seeing a lot POCOs (I'm currently working in the .NET world) without a constructor defined, so an example of what this looks like is:
 
-``` C#
+```csharp
 public class MyClass
 {
     public string Name { get; set; }
@@ -42,7 +42,7 @@ Depending on how widely used `MyClass` is, I find litterings of code similar to 
 
 Moving the above logic to a constructor would look like this:
 
-``` C#
+```csharp
 public class MyClass
 {
     public string Name { get; }
