@@ -7,7 +7,7 @@ import PostLayout from './PostLayout.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
-const { title, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
 <html lang="en">
@@ -59,6 +59,7 @@ const { title, pubDate, updatedDate } = Astro.props;
 		<main>
 			<PostLayout
 				title={title}
+				description={description}
 				pubDate={pubDate}
 				updatedDate={updatedDate}
 			>

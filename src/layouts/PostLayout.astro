@@ -1,7 +1,7 @@
 ---
 import FormattedDate from '../components/FormattedDate.astro';
 
-const { title, subtitle, pubDate, updatedDate } = Astro.props;
+const { title, description, pubDate, updatedDate } = Astro.props;
 ---
 
 <article>
@@ -9,16 +9,14 @@ const { title, subtitle, pubDate, updatedDate } = Astro.props;
         <div class="title">
             <div class="date">
                 Published: <FormattedDate date={pubDate} />
-                {
-                    updatedDate && (
-                        <div>
-                            Last updated: <FormattedDate date={updatedDate} />
-                        </div>
-                    )
-                }
+                { updatedDate && (
+                    <div>
+                        Last updated: <FormattedDate date={updatedDate} />
+                    </div>
+                )}
             </div>
             <h1>{title}</h1>
-            <div class="subtitle">{subtitle}</div>
+            <div class="subtitle">{description}</div>
             <hr />
         </div>
         <slot />
