@@ -1,5 +1,5 @@
 ---
-title: 'How I Stopped Dependency Changes From Massively Breaking The Unit Test Build'
+title: 'A Testing Framework To Reduce Breaking Changes'
 description: "I don't really recommend doing this"
 pubDate: '2026-10-23'
 tags: ["software", "testing", "unit testing", "C#", "NUnit"]
